@@ -23,7 +23,7 @@ class DoctrineAchievementProviderFactory implements FactoryInterface
      * Create service
      *
      * @param ServiceLocatorInterface $serviceLocator
-     * @return mixed
+     * @return DoctrineAchievementProvider
      */
     public function createService(ServiceLocatorInterface $serviceLocator)
     {
