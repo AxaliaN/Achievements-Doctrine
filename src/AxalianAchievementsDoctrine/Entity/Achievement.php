@@ -5,8 +5,8 @@
  * @category  AxalianAchievements\Entity
  * @package   AxalianAchievements\Entity
  * @author    Michel Maas <michel@michelmaas.com>
+ * @codeCoverageIgnore
  */
- 
 
 namespace AxalianAchievementsDoctrine\Entity;
 

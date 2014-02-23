@@ -6,7 +6,6 @@
  * @package   AxalianAchievements\Entity
  * @author    Michel Maas <michel@michelmaas.com>
  */
- 
 
 namespace AxalianAchievementsDoctrine\Entity;
 

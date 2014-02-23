@@ -2,41 +2,16 @@
 /**
  * CategoryTest
  *
- * @category  AxalianAchievementsTest\AxalianAchievementsTest\Entity
- * @package   AxalianAchievementsTest\AxalianAchievementsTest\Entity
+ * @category  AxalianAchievementsTest\Entity
+ * @package   AxalianAchievementsTest\Entity
  * @author    Michel Maas <michel@michelmaas.com>
  */
- 
 
-namespace AxalianAchievementsTest\Entity;
+namespace AxalianAchievementsDoctrineTest\Entity;
 
-use AxalianAchievementsDoctrine\Entity\Category;
+use AxalianAchievementsTest\Entity\CategoryTest as BaseCategoryTest;
 
-class CategoryTest extends \PHPUnit_Framework_TestCase
+class CategoryTest extends BaseCategoryTest
 {
-    /**
-     * @var Category
-     */
-    protected $entity;
-
-    public function setUp()
-    {
-        $data = array(
-            'id' => 'foobar',
-            'title' => 'Test category',
-            'description' => 'This is a test category',
-            'image' => 'foobar.png',
-        );
-
-        $this->entity = new Category($data['id'], $data);
-    }
-
-    public function testGetters()
-    {
-        $this->assertEquals('foobar', $this->entity->getId());
-        $this->assertEquals('Test category', $this->entity->getTitle());
-        $this->assertEquals('This is a test category', $this->entity->getDescription());
-        $this->assertEquals('foobar.png', $this->entity->getImage());
-    }
 }
  

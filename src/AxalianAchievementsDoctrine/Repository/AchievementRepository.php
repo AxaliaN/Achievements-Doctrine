@@ -5,6 +5,7 @@
  * @category  AxalianAchievementsDoctrine\Repository
  * @package   AxalianAchievementsDoctrine\Repository
  * @author    Michel Maas <michel@michelmaas.com>
+ *
  */
 
 namespace AxalianAchievementsDoctrine\Repository;
