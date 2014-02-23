@@ -11,7 +11,7 @@
         "php": ">=5.3.3",
         "zendframework/zendframework": "2.2.*",
         "doctrine/orm": "2.5.*@dev",
-        "axalian/achievements-doctrine": "1.*"
+        "axalian/achievements": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "3.7.*",
