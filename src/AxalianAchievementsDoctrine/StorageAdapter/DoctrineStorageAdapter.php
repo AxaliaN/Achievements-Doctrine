@@ -6,10 +6,8 @@
  * @package   AxalianAchievementsDoctrine\StorageAdapter
  * @author    Michel Maas <michel@michelmaas.com>
  */
- 
 
 namespace AxalianAchievementsDoctrine\StorageAdapter;
-
 
 use AxalianAchievements\Entity\Achievement;
 use AxalianAchievements\StorageAdapter\StorageAdapterInterface;
@@ -24,7 +22,7 @@ class DoctrineStorageAdapter implements StorageAdapterInterface
      */
     public function getAchievementsForUser(UserInterface $user)
     {
-        // TODO: Implement getAchievementsForUser() method.
+        return array();
     }
 
     /**
@@ -34,7 +32,7 @@ class DoctrineStorageAdapter implements StorageAdapterInterface
      */
     public function awardAchievementToUser(Achievement $achievement, UserInterface $user)
     {
-        // TODO: Implement awardAchievementToUser() method.
+        return true;
     }
 
     /**
@@ -44,7 +42,7 @@ class DoctrineStorageAdapter implements StorageAdapterInterface
      */
     public function removeAchievementFromUser(Achievement $achievement, UserInterface $user)
     {
-        // TODO: Implement removeAchievementFromUser() method.
+        return true;
     }
 }
  

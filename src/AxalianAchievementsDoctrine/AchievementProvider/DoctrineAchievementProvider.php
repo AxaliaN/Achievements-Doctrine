@@ -109,7 +109,7 @@ class DoctrineAchievementProvider implements AchievementProviderInterface
 
     /**
      * @param array $achievements
-     * @return DoctrineAchievementsProvider
+     * @return self
      */
     public function setAchievements($achievements)
     {
@@ -120,7 +120,7 @@ class DoctrineAchievementProvider implements AchievementProviderInterface
 
     /**
      * @param array $categories
-     * @return DoctrineAchievementsProvider
+     * @return self
      */
     public function setCategories($categories)
     {
