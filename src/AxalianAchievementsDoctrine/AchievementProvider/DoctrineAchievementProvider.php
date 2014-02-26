@@ -50,7 +50,7 @@ class DoctrineAchievementProvider implements AchievementProviderInterface
      */
     public function getAchievements()
     {
-        if(count($this->achievements) == 0) {
+        if (count($this->achievements) == 0) {
             $this->setAchievements($this->getAchievementRepository()->findAll());
         }
 
@@ -62,7 +62,7 @@ class DoctrineAchievementProvider implements AchievementProviderInterface
      */
     public function getCategories()
     {
-        if(count($this->categories) == 0) {
+        if (count($this->categories) == 0) {
             $this->setCategories($this->getCategoryRepository()->findAll());
         }
 
@@ -129,4 +129,3 @@ class DoctrineAchievementProvider implements AchievementProviderInterface
         return $this;
     }
 }
- 

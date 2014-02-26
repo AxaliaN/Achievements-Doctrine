@@ -16,7 +16,10 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Achievement
  *
- * @ORM\Table(name="AxalianAchievementsDoctrine_Achievements", indexes={@ORM\Index(name="categoryID", columns={"categoryID"})})
+ * @ORM\Table(
+ *      name="AxalianAchievementsDoctrine_Achievements",
+ *      indexes={@ORM\Index(name="categoryID", columns={"categoryID"})}
+ * )
  * @ORM\Entity(repositoryClass="AxalianAchievementsDoctrine\Repository\AchievementRepository")
  */
 class Achievement extends BaseAchievement
@@ -47,9 +50,9 @@ class Achievement extends BaseAchievement
     /**
      * @var string
      *
-     * @ORM\Column(name="event", type="string", length=50, nullable=false)
+     * @ORM\Column(name="name", type="string", length=50, nullable=false)
      */
-    protected $event;
+    protected $name;
 
     /**
      * @var integer
@@ -57,13 +60,6 @@ class Achievement extends BaseAchievement
      * @ORM\Column(name="points", type="integer", nullable=true)
      */
     protected $points = '0';
-
-    /**
-     * @var boolean
-     *
-     * @ORM\Column(name="multiple", type="boolean", nullable=true)
-     */
-    protected $multiple = '0';
 
     /**
      * @var string
@@ -82,4 +78,3 @@ class Achievement extends BaseAchievement
      */
     protected $category;
 }
- 

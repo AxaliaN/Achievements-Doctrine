@@ -1,6 +1,6 @@
 <?php
 /**
- * AchievementRepository
+ * UserAchievementRepository
  *
  * @category  AxalianAchievementsDoctrine\Repository
  * @package   AxalianAchievementsDoctrine\Repository
@@ -11,7 +11,7 @@ namespace AxalianAchievementsDoctrine\Repository;
 
 use Doctrine\ORM\EntityRepository;
 
-class AchievementRepository extends EntityRepository
+class UserAchievementRepository extends EntityRepository
 {
 
 }

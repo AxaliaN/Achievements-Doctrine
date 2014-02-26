@@ -6,7 +6,6 @@
  * @package   AxalianAchievementsDoctrine\ServiceFactory\Repository
  * @author    Michel Maas <michel@michelmaas.com>
  */
- 
 
 namespace AxalianAchievementsDoctrine\ServiceFactory\Repository;
 
@@ -43,9 +42,11 @@ class RepositoryFactory implements AbstractFactoryInterface
     protected function getEntityClassName($repositoryClass)
     {
         $repositoryClass = str_replace('\\Repository\\', '\\Entity\\', $repositoryClass);
-        $repositoryClass = (substr($repositoryClass, -10) === 'Repository') ? substr($repositoryClass, 0, -10) : $repositoryClass;
+        $repositoryClass =
+            (substr($repositoryClass, -10) === 'Repository') ?
+            substr($repositoryClass, 0, -10) :
+            $repositoryClass;
 
         return $repositoryClass;
     }
 }
- 

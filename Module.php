@@ -45,8 +45,7 @@ class Module implements ServiceProviderInterface
         return array(
             'factories' => array(
                 'AxalianAchievementsDoctrine\AchievementProvider\DoctrineAchievementRepository' => 'AxalianAchievementsDoctrine\ServiceFactory\AchievementProvider\DoctrineAchievementRepositoryFactory',
-                'AxalianAchievementsDoctrine\Repository\AchievementRepository' => 'AxalianAchievementsDoctrine\Repository\AchievementRepository',
-                'AxalianAchievementsDoctrine\Repository\CategoryRepository' => 'AxalianAchievementsDoctrine\Repository\CategoryRepository',
+                'AxalianAchievementsDoctrine\StorageAdapter\DoctrineStorageAdapter' => 'AxalianAchievementsDoctrine\ServiceFactory\StorageAdapter\DoctrineStorageAdapterFactory',
             ),
             'abstract_factories' => array(
                 'AxalianAchievementsDoctrine\ServiceFactory\Repository\RepositoryFactory',

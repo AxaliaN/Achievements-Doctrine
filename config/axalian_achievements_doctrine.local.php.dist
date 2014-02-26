@@ -1,0 +1,18 @@
+<?php
+/**
+ * AxalianAchievements Configuration
+ *
+ * @category AxalianAchievements
+ * @package  AxalianAchievements
+ * @author   Michel Maas <michel@michelmaas.com>
+ */
+return array(
+    'axalian_achievements' => array(
+        'achievement_providers' => array(
+            'factories' => array(
+                'AxalianAchievementsDoctrine\AchievementProvider\DoctrineAchievementProvider' => 'AxalianAchievementsDoctrine\ServiceFactory\AchievementProvider\DoctrineAchievementProviderFactory'
+            )
+        ),
+        'storage_adapter' => 'AxalianAchievementsDoctrine\StorageAdapter\DoctrineStorageAdapter'
+    ),
+);

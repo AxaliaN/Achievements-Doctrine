@@ -50,4 +50,3 @@ class Category extends BaseCategory
      */
     protected $image;
 }
- 

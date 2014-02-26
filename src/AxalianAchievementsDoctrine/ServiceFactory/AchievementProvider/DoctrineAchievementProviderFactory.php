@@ -31,7 +31,9 @@ class DoctrineAchievementProviderFactory implements FactoryInterface
         $rootServiceLocator = $serviceLocator->getServiceLocator();
 
         /** @var RepositoryFactory $abstractFactory */
-        $abstractFactory = $rootServiceLocator->get('AxalianAchievementsDoctrine\ServiceFactory\Repository\RepositoryFactory');
+        $abstractFactory = $rootServiceLocator->get(
+            'AxalianAchievementsDoctrine\ServiceFactory\Repository\RepositoryFactory'
+        );
 
         /** @var AchievementRepository $achievementRepository */
         $achievementRepository = $abstractFactory->createServiceWithName(
@@ -50,4 +52,3 @@ class DoctrineAchievementProviderFactory implements FactoryInterface
         return new DoctrineAchievementProvider($achievementRepository, $categoryRepository);
     }
 }
- 
