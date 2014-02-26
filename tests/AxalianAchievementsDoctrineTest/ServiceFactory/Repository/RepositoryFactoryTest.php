@@ -53,4 +53,3 @@ class RepositoryFactoryTest extends PHPUnit_Framework_TestCase
         $this->assertInstanceOf('AxalianAchievementsDoctrine\Repository\AchievementRepository', $repository);
     }
 }
- 

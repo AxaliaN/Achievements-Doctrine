@@ -56,6 +56,7 @@ class DoctrineAchievementProviderFactoryTest extends PHPUnit_Framework_TestCase
         $serviceLocatorMock->shouldReceive('getServiceLocator')->andReturn($rootServiceLocatorMock);
 
         $service = $this->providerFactory->createService($serviceLocatorMock);
+
+        $this->assertInstanceOf('AxalianAchievementsDoctrine\AchievementProvider\DoctrineAchievementProvider', $service);
     }
 }
- 
