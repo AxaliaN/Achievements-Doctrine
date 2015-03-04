@@ -9,10 +9,10 @@
     "homepage": "http://github.com/axalian/achievements-doctrine",
     "require": {
         "php": ">=5.3.3",
-        "zendframework/zendframework": "2.2.*",
-        "doctrine/doctrine-orm-module": "0.8.0",
-        "axalian/achievements": "dev-master",
-        "gedmo/doctrine-extensions": "v2.3.9"
+        "zendframework/zendframework": "2.*",
+        "doctrine/doctrine-orm-module": ">=0.8.0",
+        "axalian/achievements": "*",
+        "gedmo/doctrine-extensions": ">=v2.3.9"
     },
     "require-dev": {
         "phpunit/phpunit": "3.7.*",
